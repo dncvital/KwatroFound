@@ -13,6 +13,7 @@ def random_cell():
 
 
 # function to create the board for the AI
+# by Programmer 3 - Vital, Dianne Nicolle
 def create_board_computer():
     board = {
         1:' ', 2:' ', 3:' ', 4:' ', 5:' ', 6:' ', 7:' ', 8:' ', 9:' ', 10:' ',
@@ -67,6 +68,7 @@ def create_board_computer():
 
 
 # function to create the board for the player
+# by Programmer 1 - Estrellado, Clarice Anne
 def create_board_player():
     number_of_ships = 5
     placed_destroyer = False
@@ -137,7 +139,7 @@ def create_board_player():
             print()
     return board
 
-
+# by Programmer 2 - Formalejo, Dianna Lyn
 def choose_direction():
     print('Choose direction:')
     print('[1] Vertical')
@@ -149,6 +151,7 @@ def choose_direction():
 
 
 ## function to display board in a readeable format
+# by Programmer 2 - Formalejo, Dianna Lyn
 def display_board(board):
     print('       1   2   3   4   5   6   7   8   9   10  ')
     print('     ╔═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╗')
@@ -173,7 +176,7 @@ def display_board(board):
     print('  10 ║ ' + board[91] + ' ║ ' + board[92] + ' ║ ' + board[93] + ' ║ ' + board[94] + ' ║ ' + board[95] + ' ║ ' + board[96] + ' ║ ' + board[97] + ' ║ ' + board[98] + ' ║ ' + board[99] + ' ║ ' + board[100] + ' ║')
     print('     ╚═══╩═══╩═══╩═══╩═══╩═══╩═══╩═══╩═══╩═══╝')
 
-
+# by Programmer 3 - Vital, Dianne Nicolle
 def check_for_game_over(pc_point, player_point, round):
     """If all ships have been sunk or we run out of bullets its game over"""
     if round == 50:
@@ -192,7 +195,7 @@ def check_for_game_over(pc_point, player_point, round):
         return False
     return True
 
-
+# by Programmer 1 - Estrellado, Clarice Anne
 def place_ship(ship_type, ship_size, choice_dir, ship_locs, board):
     valid_placement = False
     loc = 0
@@ -269,6 +272,7 @@ def place_ship(ship_type, ship_size, choice_dir, ship_locs, board):
     
 
 ## function to play Battleship
+# by Lead Programmer - Tubice, Alexa Kaye
 def game():
     ## create boards for NPC and player
     pc_board = create_board_computer()
